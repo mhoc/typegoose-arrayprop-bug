@@ -18,6 +18,11 @@ class EmailAddress {
   public email?: string;
 }
 
+// ===========================================================
+// Main bug here.
+// Line 29 works fine
+// Lines 27 and 28 do not work
+// ===========================================================
 class Profile {
   @arrayProp({ default: () => [], items: EmailAddress })
   // @arrayProp({ items: EmailAddress, required: true })
